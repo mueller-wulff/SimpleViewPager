@@ -1,0 +1,7 @@
+<resources>
+	<string name="app_name">SimpleViewPager</string>
+
+	<string name="page1">violet-ish</string>
+	<string name="page2">ochre</string>
+	<string name="page3">brown</string>
+</resources>
