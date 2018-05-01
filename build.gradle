@@ -2,6 +2,9 @@
 
 buildscript {
     ext{
+        versionCode = 3
+        versionName = "1.2"
+
         kotlinVersion = '1.2.41'
         supportVersion = '27.1.1'
     }
