@@ -3,11 +3,11 @@ package com.sihamark.simpleviewpager.example
 import android.databinding.DataBindingUtil
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import com.sihamark.simpleviewpager.ListPagerAdapter
 import com.sihamark.simpleviewpager.Page
 import com.sihamark.simpleviewpager.R
 import com.sihamark.simpleviewpager.SimplePage
 import com.sihamark.simpleviewpager.databinding.ActivityMainBinding
+import com.sihamark.simpleviewpager.toPagerAdapter
 
 class MainActivity : AppCompatActivity() {
 
@@ -33,6 +33,6 @@ class MainActivity : AppCompatActivity() {
 		val binding: ActivityMainBinding =
 			DataBindingUtil.setContentView(this, R.layout.activity_main)
 
-		binding.adapter = ListPagerAdapter(supportFragmentManager, pages)
+		binding.adapter = pages.toPagerAdapter(supportFragmentManager)
 	}
 }

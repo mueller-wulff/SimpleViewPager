@@ -9,11 +9,6 @@ import android.view.View
 import android.view.ViewGroup
 import com.sihamark.simpleviewpager.databinding.FragmentColorBinding
 
-/**
- * @author Hans Markwart (fanaloce@gmail.com)
- *
- * created at 01.05.2018.
- */
 class TestFragment : Fragment() {
 
 	@ColorRes
