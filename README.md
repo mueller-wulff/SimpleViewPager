@@ -69,13 +69,13 @@ allprojects {
 
 add SimpleViewPager to application build.gradle
 ```groovy
-implementation 'com.github.sihamark:SimpleViewPager:-SNAPSHOT'
+implementation 'com.github.sihamark:SimpleViewPager:1.1'
 ```
 
 License
 -------
 
-    Copyright 2013 Hans Markwart
+    Copyright 2018 Hans Markwart
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.

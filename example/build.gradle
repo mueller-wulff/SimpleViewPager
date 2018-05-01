@@ -29,6 +29,5 @@ dependencies {
     implementation "com.android.support:design:$supportVersion"
     implementation "com.android.support.constraint:constraint-layout:1.1.0"
 
-//    implementation 'com.github.sihamark:SimpleViewPager:-SNAPSHOT'
-    implementation project(':library')
+    implementation 'com.github.sihamark:SimpleViewPager:1.1'
 }
