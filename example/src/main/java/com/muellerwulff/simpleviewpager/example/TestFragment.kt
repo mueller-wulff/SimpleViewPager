@@ -1,4 +1,4 @@
-package com.sihamark.simpleviewpager.example
+package com.muellerwulff.simpleviewpager.example
 
 import android.os.Bundle
 import android.support.annotation.ColorRes
@@ -7,7 +7,7 @@ import android.support.v4.content.ContextCompat
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.sihamark.simpleviewpager.databinding.FragmentColorBinding
+import com.muellerwulff.simpleviewpager.databinding.FragmentColorBinding
 
 class TestFragment : Fragment() {
 

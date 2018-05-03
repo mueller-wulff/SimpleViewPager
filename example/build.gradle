@@ -6,7 +6,7 @@ apply plugin: 'kotlin-kapt'
 android {
     compileSdkVersion 27
     defaultConfig {
-        applicationId "com.sihamark.simpleviewpager"
+        applicationId "com.muellerwulff.simpleviewpager"
         minSdkVersion 14
         targetSdkVersion 27
         versionCode rootProject.versionCode
@@ -29,5 +29,5 @@ dependencies {
     implementation "com.android.support:design:$supportVersion"
     implementation "com.android.support.constraint:constraint-layout:1.1.0"
 
-    implementation 'com.github.sihamark:SimpleViewPager:1.1'
+    implementation 'com.github.mueller-wulff:SimpleViewPager:-SNAPSHOT'
 }

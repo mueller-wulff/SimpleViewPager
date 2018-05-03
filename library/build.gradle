@@ -9,7 +9,6 @@ group='com.github.mueller-wulff'
 
 android {
     compileSdkVersion 27
-
     defaultConfig {
         minSdkVersion 14
         targetSdkVersion 27

@@ -1,13 +1,13 @@
-package com.sihamark.simpleviewpager.example
+package com.muellerwulff.simpleviewpager.example
 
 import android.databinding.DataBindingUtil
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import com.sihamark.simpleviewpager.Page
-import com.sihamark.simpleviewpager.R
-import com.sihamark.simpleviewpager.SimplePage
-import com.sihamark.simpleviewpager.databinding.ActivityMainBinding
-import com.sihamark.simpleviewpager.toPagerAdapter
+import com.muellerwulff.simpleviewpager.Page
+import com.muellerwulff.simpleviewpager.R
+import com.muellerwulff.simpleviewpager.SimplePage
+import com.muellerwulff.simpleviewpager.databinding.ActivityMainBinding
+import com.muellerwulff.simpleviewpager.toPagerAdapter
 
 class MainActivity : AppCompatActivity() {
 
