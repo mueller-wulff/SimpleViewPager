@@ -72,7 +72,7 @@ allprojects {
 
 add SimpleViewPager to application build.gradle
 ```groovy
-implementation 'com.github.mueller-wulff:SimpleViewPager:-SNAPSHOT'
+implementation 'com.github.mueller-wulff:SimpleViewPager:1.3'
 ```
 
 License
