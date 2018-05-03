@@ -2,7 +2,7 @@
  * Copyright (c) 2018.  Müller & Wulff GmbH. All rights reserved.
  */
 
-package com.sihamark.simpleviewpager
+package com.muellerwulff.simpleviewpager
 
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager

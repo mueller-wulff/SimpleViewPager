@@ -1,4 +1,4 @@
-package com.sihamark.simpleviewpager
+package com.muellerwulff.simpleviewpager
 
 import android.databinding.BindingAdapter
 import android.support.annotation.IdRes

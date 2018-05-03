@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 1.2
+
+- changed application Id, group Id and packages to mueller-wulff
+
 ## Version 1.1
 
 - added extension method to turn list of pages into adapter

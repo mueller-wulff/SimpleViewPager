@@ -1,4 +1,4 @@
-package com.sihamark.simpleviewpager
+package com.muellerwulff.simpleviewpager
 
 import android.content.Context
 import android.support.annotation.StringRes
