@@ -1,5 +1,13 @@
 # Changelog
 
+## Version 1.4
+
+- enabled databinding v2
+
+## Version 1.3
+
+- moved project to mueller & wulff
+
 ## Version 1.2
 
 - changed application Id, group Id and packages to mueller-wulff
