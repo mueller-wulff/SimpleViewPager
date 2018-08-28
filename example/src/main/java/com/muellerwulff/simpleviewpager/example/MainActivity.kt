@@ -13,18 +13,15 @@ class MainActivity : AppCompatActivity() {
 
 	private val pages: List<Page> by lazy {
 		listOf(
-			SimplePage(
-				this@MainActivity,
-				R.string.page1,
-				{ TestFragment.newInstance(R.color.page1) }),
-			SimplePage(
-				this@MainActivity,
-				R.string.page2,
-				{ TestFragment.newInstance(R.color.page2) }),
-			SimplePage(
-				this@MainActivity,
-				R.string.page3,
-				{ TestFragment.newInstance(R.color.page3) })
+			SimplePage(this, R.string.page1) {
+				TestFragment.newInstance(R.color.page1)
+			},
+			SimplePage(this, R.string.page2) {
+				TestFragment.newInstance(R.color.page2)
+			},
+			SimplePage(this, R.string.page3) {
+				TestFragment.newInstance(R.color.page3)
+			}
 		)
 	}
 
