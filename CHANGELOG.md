@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 1.5
+
+- updated ListPageAdapter to use FragmentStatePagerAdapter
+- updated kotlin, constraint layout and gradle plugin
+
 ## Version 1.4
 
 - enabled databinding v2
