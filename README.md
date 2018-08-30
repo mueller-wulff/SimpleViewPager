@@ -17,18 +17,15 @@ Set the adapter on a `ViewPager` and you are done.
 ```kotlin
 private val pages: List<Page> by lazy {
     listOf(
-        SimplePage(
-            this@MainActivity,
-            R.string.page1,
-            { TestFragment.newInstance(R.color.page1) }),
-        SimplePage(
-            this@MainActivity,
-            R.string.page2,
-            { TestFragment.newInstance(R.color.page2) }),
-        SimplePage(
-            this@MainActivity,
-            R.string.page3,
-            { TestFragment.newInstance(R.color.page3) })
+        SimplePage(this, R.string.page1) {
+            TestFragment.newInstance(R.color.page1)
+        },
+        SimplePage(this, R.string.page2) {
+            TestFragment.newInstance(R.color.page2)
+        },
+        SimplePage(this, R.string.page3) {
+            TestFragment.newInstance(R.color.page3)
+        }
     )
 }
 ```
@@ -53,6 +50,24 @@ using regular view mechanics:
 val viewPager = findViewById<ViewPager>(R.id.view_pager)
 viewPager.setAdapter(adapter)
 ```
+
+### Bonus
+
+To conveniently setup the TabLayout a ViewPager there is a binding adapter to do just that. Use it like:
+
+````kotlin
+<android.support.design.widget.TabLayout
+    android:id="@+id/tabs"
+    app:viewPager="@{@id/pager}" />
+    
+<android.support.v4.view.ViewPager
+    android:id="@+id/pager" />
+````
+
+Be warned that the implementation searches for the ViewPager recursively up the view hierarchy. 
+This is capped at 3 hierarchies level up from the TabLayout. If you got a very complex where the 
+TabLayout's and the ViewPager's parent are sibling or both views lies very far away, parent wise, 
+it is easier to simply call `setupWithViewPager`. 
 
 Installation
 ------------
