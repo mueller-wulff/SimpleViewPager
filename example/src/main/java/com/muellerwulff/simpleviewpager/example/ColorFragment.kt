@@ -1,11 +1,10 @@
-package com.sihamark.simpleviewpager.example
+package com.muellerwulff.simpleviewpager.example
 
 import android.os.Bundle
 import android.view.View
 import androidx.annotation.ColorRes
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
-import com.sihamark.simpleviewpager.R
 import kotlinx.android.synthetic.main.fragment_color.*
 
 class ColorFragment : Fragment(R.layout.fragment_color) {
