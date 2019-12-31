@@ -1,8 +1,8 @@
 package com.sihamark.simpleviewpager
 
 import android.content.Context
-import android.support.annotation.StringRes
-import android.support.v4.app.Fragment
+import androidx.annotation.StringRes
+import androidx.fragment.app.Fragment
 
 interface Page {
 	val title: CharSequence

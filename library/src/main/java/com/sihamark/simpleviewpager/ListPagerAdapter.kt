@@ -4,14 +4,14 @@
 
 package com.sihamark.simpleviewpager
 
-import android.support.v4.app.Fragment
-import android.support.v4.app.FragmentManager
-import android.support.v4.app.FragmentPagerAdapter
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentPagerAdapter
 
 class ListPagerAdapter(
 	fragmentManager: FragmentManager,
 	private val pages: List<Page>
-) : FragmentPagerAdapter(fragmentManager) {
+) : FragmentPagerAdapter(fragmentManager, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT) {
 	override fun getItem(position: Int): Fragment = pages[position].fragment
 	override fun getCount(): Int = pages.size
 	override fun getPageTitle(position: Int): CharSequence? = pages[position].title

@@ -5,7 +5,7 @@
 
 	<data>
 
-		<import type="android.support.v4.view.PagerAdapter" />
+		<import type="androidx.viewpager.widget.PagerAdapter" />
 
 		<variable
 			name="adapter"
@@ -13,12 +13,12 @@
 
 	</data>
 
-	<android.support.constraint.ConstraintLayout
+	<androidx.constraintlayout.widget.ConstraintLayout
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
 		tools:context=".MainActivity">
 
-		<android.support.v7.widget.Toolbar
+		<androidx.appcompat.widget.Toolbar
 			android:id="@+id/toolbar"
 			android:layout_width="0dp"
 			android:layout_height="wrap_content"
@@ -27,7 +27,7 @@
 			app:layout_constraintTop_toTopOf="parent"
 			app:title="Simple Viewpager example" />
 
-		<android.support.design.widget.TabLayout
+		<com.google.android.material.tabs.TabLayout
 			android:id="@+id/tabs"
 			android:layout_width="0dp"
 			android:layout_height="wrap_content"
@@ -36,7 +36,7 @@
 			app:layout_constraintTop_toBottomOf="@+id/toolbar"
 			app:viewPager="@{@id/pager}" />
 
-		<android.support.v4.view.ViewPager
+		<androidx.viewpager.widget.ViewPager
 			android:id="@+id/pager"
 			android:layout_width="0dp"
 			android:layout_height="0dp"
@@ -46,5 +46,5 @@
 			app:layout_constraintStart_toStartOf="parent"
 			app:layout_constraintTop_toBottomOf="@+id/tabs" />
 
-	</android.support.constraint.ConstraintLayout>
+	</androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
