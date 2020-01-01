@@ -16,17 +16,11 @@ Set the adapter on a `ViewPager` and you are done.
 
 ```kotlin
 private val pages: List<Page> by lazy {
-    listOf(
-        SimplePage(this, R.string.page1) {
-            TestFragment.newInstance(R.color.page1)
-        },
-        SimplePage(this, R.string.page2) {
-            TestFragment.newInstance(R.color.page2)
-        },
-        SimplePage(this, R.string.page3) {
-            TestFragment.newInstance(R.color.page3)
-        }
-    )
+	listOf(
+		SimplePage(R.string.page1) { ColorFragment.newInstance(R.color.page1) },
+		SimplePage(R.string.page2) { ColorFragment.newInstance(R.color.page2) },
+		SimplePage(R.string.page3) { ColorFragment.newInstance(R.color.page3) }
+	)
 }
 ```
 
@@ -55,7 +49,7 @@ viewPager.setAdapter(adapter)
 
 To conveniently setup the TabLayout a ViewPager there is a binding adapter to do just that. Use it like:
 
-````kotlin
+````xml
 <android.support.design.widget.TabLayout
     android:id="@+id/tabs"
     app:viewPager="@{@id/pager}" />
@@ -68,6 +62,10 @@ Be warned that the implementation searches for the ViewPager recursively up the 
 This is capped at 3 hierarchies level up from the TabLayout. If you got a very complex where the 
 TabLayout's and the ViewPager's parent are sibling or both views lies very far away, parent wise, 
 it is easier to simply call `setupWithViewPager`. 
+
+### Notice
+
+This library works with androidX. It is also compatible with ViewPager2.
 
 Installation
 ------------
@@ -87,13 +85,13 @@ allprojects {
 
 add SimpleViewPager to application build.gradle
 ```groovy
-implementation 'com.github.mueller-wulff:SimpleViewPager:1.5'
+implementation 'com.github.mueller-wulff:SimpleViewPager:1.6'
 ```
 
 License
 -------
 
-    Copyright 2018 Hans Markwart
+    Copyright 2019 Hans Markwart
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
