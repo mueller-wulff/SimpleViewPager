@@ -6,7 +6,7 @@ import androidx.databinding.DataBindingUtil
 import com.muellerwulff.simpleviewpager.Page
 import com.muellerwulff.simpleviewpager.SimplePage
 import com.muellerwulff.simpleviewpager.example.databinding.ActivityMainBinding
-import com.muellerwulff.simpleviewpager.toStatePagerAdapter
+import com.muellerwulff.simpleviewpager.toPagerAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -23,6 +23,6 @@ class MainActivity : AppCompatActivity() {
 		super.onCreate(savedInstanceState)
 		DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
 
-		pager.adapter = pages.toStatePagerAdapter(supportFragmentManager)
+		pager.adapter = pages.toPagerAdapter(supportFragmentManager)
 	}
 }
