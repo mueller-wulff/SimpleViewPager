@@ -1,5 +1,11 @@
 # Changelog
 
+## Version 1.6
+
+- converted to androidX
+- added support for view pager 2
+- added extension to create pages with string resources for titles
+
 ## Version 1.5
 
 - updated ListPageAdapter to use FragmentStatePagerAdapter
