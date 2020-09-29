@@ -1,5 +1,11 @@
 # Changelog
 
+## Version 1.7
+
+- updated kotlin to 1.4.10
+- update AGP to 4.0.1
+- removed view data binding integration
+
 ## Version 1.6
 
 - converted to androidX
