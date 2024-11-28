@@ -1,5 +1,7 @@
 # SimpleViewPager
 
+**This Project is not maintained anymore.** One reason is the maintenance became complicated after ViewPager2 released. Another reason is Jetpack Compose, which makes the implementation of pagers a lot easier and less boiletplate. 
+
 [![](https://jitpack.io/v/mueller-wulff/SimpleViewPager.svg)](https://jitpack.io/#mueller-wulff/SimpleViewPager)
 
 
